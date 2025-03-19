@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="container">
+      <section class="presentation-container">
+        <h1>Welcome to the Library</h1>
+        <button>Add a new Book</button>
+      </section>
+      <dialog>
+        <form>
+          <label for="title">Title</label>
+          <input type="text" id="title" required />
+          <label for="author">Author</label>
+          <input type="text" id="author" required />
+          <label for="pages">Pages</label>
+          <input type="number" id="pages" required />
+          <label for="read">Read</label>
+          <input type="checkbox" id="read" />
+          <button type="submit">Add Book</button>
+        </form>
+      </dialog>
+      <section class="books-container">
+        <div class="books"></div>
+      </section>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
