@@ -10,24 +10,35 @@
     <div class="container">
       <section class="presentation-container">
         <h1>Welcome to the Library</h1>
-        <button>Add a new Book</button>
+        <button class="button-add">Add Book</button>
       </section>
-      <dialog>
-        <form>
-          <label for="title">Title</label>
-          <input type="text" id="title" required />
-          <label for="author">Author</label>
-          <input type="text" id="author" required />
-          <label for="pages">Pages</label>
-          <input type="number" id="pages" required />
-          <label for="read">Read</label>
-          <input type="checkbox" id="read" />
-          <button type="submit">Add Book</button>
-        </form>
-      </dialog>
-      <section class="books-container">
-        <div class="books"></div>
-      </section>
+      <div class="modal-container">
+        <dialog class="modal">
+          <form>
+            <div>
+              <label for="title">Title</label>
+              <input type="text" id="title" name="title" required />
+            </div>
+            <div>
+              <label for="author">Author</label>
+              <input type="text" id="author" name="author" required />
+            </div>
+            <div>
+              <label for="pages">Pages</label>
+              <input type="number" id="pages" name="number" />
+            </div>
+            <div id="read-id">
+              <label for="read">Read</label>
+              <input type="checkbox" id="read" name="read" />
+            </div>
+            <div class="modal-btn">
+              <button type="submit" class="accept-btn">Accept</button>
+              <button class="close-button">Close</button>
+            </div>
+          </form>
+        </dialog>
+      </div>
+      <section class="books-container"></section>
       <script src="script.js"></script>
     </div>
   </body>
