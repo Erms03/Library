@@ -9,8 +9,7 @@ body {
   min-height: 100vh;
   background-color: #c3bcbc;
 }
-.container {
-}
+
 .presentation-container {
   display: flex;
   flex-direction: column;
